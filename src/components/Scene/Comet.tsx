@@ -16,7 +16,7 @@ const CometMesh: FC<CometProps> = ({ meshRef, setLoaded }) => {
   const initialRotation = useMemo(() => new Euler(0, 0, -AXIAL_TILT), []);
   const cometObj = useLoader(
     OBJLoader,
-    "https://comet-obj.s3.us-east-2.amazonaws.com/comet_67p.obj"
+    "./comet_67p.obj"
   );
   const cometMap = useLoader(TextureLoader, "./comet_texture.jpg");
   const geometry = useMemo(() => {
